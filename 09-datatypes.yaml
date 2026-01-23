@@ -1,0 +1,17 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    COURSE: DEVSECOPS
+    DURATION: 10
+    Trainer: siva
+    tools: #list
+    - "linux"
+    - "shell"
+    concepts: #map
+     cloud: aws
+     cm: ansible
+  tasks:
+  - name: print the course info
+    ansible.builtin.debug:
+     msg: "course name is: {{ COURSE }}, {{tools}}"
