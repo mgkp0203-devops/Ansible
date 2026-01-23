@@ -1,0 +1,21 @@
+- name: play-01
+  hosts: catalouge
+  tasks:
+  - name: play-01 and task-01
+    ansible.builtin.debug:
+      msg: "Hello, plat01 task01"
+    
+  - name: play-01 and task-02
+    ansible.builtin.debug:
+      msg: "Hello, plat01 task02"
+
+- name: play-02
+  hosts: catalouge
+  tasks:
+  - name: play-02 and task-01
+    ansible.builtin.debug:
+      msg: "Hello, plat02 task01"
+    
+  - name: play-02 and task-02
+    ansible.builtin.debug:
+      msg: "Hello, plat02 task02"
