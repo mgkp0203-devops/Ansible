@@ -1,5 +1,5 @@
 - name: varibles from prompt
-  hosts: local
+  hosts: front
   connection: local
   vars_prompt:
   - name: username
