@@ -1,5 +1,5 @@
 - name: varibles from inventory
-  hosts: local
+  hosts: front
   connection: local
   tasks:
   - name: print course info
