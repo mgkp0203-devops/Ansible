@@ -11,7 +11,7 @@
       msg: "Hello, play01 task02"
 
 - name: play-02
-  hosts: catalouge
+  hosts: local
   tasks:
   - name: play-02 and task-01
     ansible.builtin.debug:
