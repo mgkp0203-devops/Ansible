@@ -1,5 +1,6 @@
 - name: ping the server
   hosts: catalouge
+  become: true
   tasks:
   - name: ping
     ansible.builtin.ping:
