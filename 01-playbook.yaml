@@ -1,5 +1,6 @@
 - name: ping the server
-  hosts: catalouge
+  hosts: local
+  connection: local
   become: yes
   tasks:
   - name: ping
