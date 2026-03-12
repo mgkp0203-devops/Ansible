@@ -1,5 +1,5 @@
 - name: install and start nginx
-  hosts: local
+  hosts: front
   become: yes
   connection: local
   tasks:
