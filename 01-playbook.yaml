@@ -1,8 +1,8 @@
-- name: ping the server
-  hosts: local
-  connection: local
+- name: ping 
+  hosts: front
   become: yes
   tasks:
-  - name: ping
+  - name: ping test
     ansible.builtin.ping:
+
     
