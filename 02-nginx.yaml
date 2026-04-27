@@ -12,5 +12,5 @@
   - name: check installed or not
     ansible.builtin.debug:
       msg: "nginx installed"
-    when: output.rc = 0
+    when: output.rc == 0
 
