@@ -7,4 +7,10 @@
     ansible.builtin.package:
       name: nginx
       state: present
+    register: output
+
+  - name: check installed or not
+    ansible.builtin.debug:
+      msg: "nginx installed"
+    when: output.rc = 0
 
