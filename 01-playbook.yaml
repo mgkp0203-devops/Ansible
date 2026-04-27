@@ -1,5 +1,6 @@
 - name: ping 
-  hosts: front
+  hosts: local
+  connection: local
   become: yes
   tasks:
   - name: ping test
